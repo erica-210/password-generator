@@ -26,7 +26,6 @@ Pages used as refrences:
 
     W3 JS: https://www.w3schools.com/js/default.asp
 
-    JS Essentials: https://codeburst.io/javascript-essentials-types-data-structures-3ac039f9877b
 
 Contibutors for base HTML and CSS layout (GitHub accounts):
 
