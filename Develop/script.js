@@ -9,15 +9,15 @@ function generatePassword() {
   //prompt user for pw length
   //verify that length entered is between 8 and 128
   //if it isn't, keep prompting until they enter a valid pw
-  var a = 8;
-  var b = 128;
-  var passwordLength = (a >= b);
+  // var a = 8;
+  // var b = 128;
+  // var length = (a >= b);
 
-  var userChoice = prompt("Password Length: ")
-    if (!passwordLength) {
-       prompt("Sorry, invalid length. Please, try again. Password Length: ")
-    } else {
-      return;
+  var passwordLength = parseInt(prompt("Password Length: "))
+    console.log(passwordLength);
+    if (!passwordLength || passwordLength < 8 || passwordLength > 128) {
+       alert("Sorry, invalid length. Please, try again.")
+       return generatePassword();
     }
   //ask user if they want to include:
     //capital letters
@@ -31,15 +31,39 @@ function generatePassword() {
   var numbers = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0'];
   var specialCharacters = ["!", "#", "$", "%", "&", "'", "(", ")", "*", "+", ",", "-", ".", "/", ":", ";", "<", "=", ">", "?", "@", "[", "^", "`", "{", "|", "}", "~"];
 
-  var useCapital = prompt("Do you want to include capital letters? yes or no: ");
-    if ("no") {
+  var useCapital = confirm("Do you want to include capital letters? yes or no: ");
+    //if ("no") {
       
-    } else if ()
+   // } else if ()
+
+   var useLowercase = confirm("Do you want to include lowercase letters? yes or no: ");
+
+   var useNumbers = confirm("Do you want to include numbers? yes or no: ");
+
+   var useSpecial = confirm("Do you want to include special characters? yes or no: ");
+
+  if (!useCapital && !useLowercase && !useNumbers && !useSpecial) {
+    alert("You must pick at least one type of Character")
+    return generatePassword()
+  } 
+
+  var possibleCharacters = []
+  if (useLowercase ) {
+    possibleCharacters = possibleCharacters.concat(lowercaseLeters)
+  }
+
+  if (useCapital) {
+    possibleCharacters = possibleCharacters.concat(capitalLetters)
+  }
+
+  if (useNumbers) {
+    possibleCharacters = possibleCharacters.concat(capitalLetters)
+  }
   //after each correct prmopt, validate 
   
   //generte password if all prompts correct
   
-
+  return "This is where I put my password"
 }
 
 // Write password to the #password input
