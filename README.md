@@ -2,7 +2,7 @@
 
 ## Description
 
-Challenge 3: To implente use of JavaScript to create a random password generator. 
+Challenge 3: To implement use of JavaScript to create a random password generator. 
 
 ## Installation
 
@@ -11,7 +11,10 @@ N/A
 ## Usage
 
 Password generator webpage: 
+
 GitHub Repository: https://github.com/erica-210/random-password-generator
+
+Webpage: 
 
 ![Webpage screenshot](./Develop/Screenshot%20(8).png)
 
