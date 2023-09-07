@@ -13,7 +13,7 @@ function generatePassword() {
     console.log(passwordLength);
     if (!passwordLength || passwordLength < 8 || passwordLength > 128) {
        alert("Sorry, invalid length. Please, try again.")
-       return generatePassword()
+       return generatePassword();
     }
 
   //ask user if they want to include:
@@ -38,24 +38,24 @@ function generatePassword() {
   //after each correct prmopt, validate 
   if (!useCapital && !useLowercase && !useNumbers && !useSpecial) {
     alert("You must pick at least one type of Character")
-    return generatePassword()
+    return generatePassword();
   } 
 
   var possibleCharacters = []
   if (useLowercase ) {
-    possibleCharacters = possibleCharacters.concat(lowercaseLetters)
+    possibleCharacters = possibleCharacters.concat(lowercaseLetters);
   }
 
   if (useCapital) {
-    possibleCharacters = possibleCharacters.concat(capitalLetters)
+    possibleCharacters = possibleCharacters.concat(capitalLetters);
   }
 
   if (useNumbers) {
-    possibleCharacters = possibleCharacters.concat(numbers)
+    possibleCharacters = possibleCharacters.concat(numbers);
   }
 
   if (useSpecial) {
-    possibleCharacters = possibleCharacters.concat(specialCharacters)
+    possibleCharacters = possibleCharacters.concat(specialCharacters);
   }
 
   //generte password if all prompts correct

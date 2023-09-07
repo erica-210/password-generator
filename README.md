@@ -13,7 +13,7 @@ N/A
 Password generator webpage: 
 GitHub Repository: https://github.com/erica-210/random-password-generator
 
-![Webpage screenshot]()
+![Webpage screenshot](./Develop/Screenshot%20(8).png)
 
 
 ## Credits
@@ -25,6 +25,14 @@ Pages used as refrences:
     Net Ninja JS tutorials: https://www.youtube.com/playlist?list=PL4cUxeGkcC9i9Ae2D9Ee1RvylH38dKuET
 
     W3 JS: https://www.w3schools.com/js/default.asp
+
+    String Generator: https://www.geeksforgeeks.org/generate-random-string-of-given-size-in-java/
+
+    MDN: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Iterators_and_generators
+
+Tutoring:
+
+    Erik Hirsch
 
 
 Contibutors for base HTML and CSS layout (GitHub accounts):
