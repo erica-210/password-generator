@@ -10,7 +10,7 @@ N/A
 
 ## Usage
 
-Password generator webpage: 
+Password generator webpage: https://erica-210.github.io/random-password-generator/
 
 GitHub Repository: https://github.com/erica-210/random-password-generator
 
